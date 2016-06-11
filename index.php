@@ -39,6 +39,7 @@
 
   <body>
 
+
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -108,7 +109,7 @@
       	<!-- <h2>&nbsp;</h2> -->
       	<div class='row'>
       		<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
-          <form class="form-inline" method="post" action="invoice_save.php">
+          <form class="" method="post" action="invoice_save.php">
       			<table class="table table-bordered table-hover">
 					<thead>
 						<tr>
@@ -122,7 +123,7 @@
 					</thead>
 					<tbody>
           
-						<tr id="row">
+						<tr>
 							<td><input class="case" type="checkbox"/></td>
 							<td><input type="text" data-type="productCode" name="itemNo[]" id="itemNo_1" class="form-control autocomplete_txt" autocomplete="off"></td>
 							<td><input type="text" data-type="productName" name="itemName[]" id="itemName_1" class="form-control autocomplete_txt" autocomplete="off"></td>
@@ -154,13 +155,13 @@
 						<div class="input-group">
 							<div class="input-group-addon">Tk.</div>
 							<input type="number" class="form-control" id="tax" placeholder="Percentage" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+               <div class="input-group-addon">%</div>
 						</div>
 					</div>
 					<div class="form-group">
 						<label>% Amount: &nbsp;</label>
 						<div class="input-group">
-							<input type="number" class="form-control" id="taxAmount" placeholder="Percentage" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
-							<div class="input-group-addon">%</div>
+							<input type="number" class="form-control" id="taxAmount" placeholder="Percentage" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">					
 						</div>
 					</div>
 
@@ -172,10 +173,10 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label>Cut Amount: &nbsp;</label>
+						<label>Discount Amount: &nbsp;</label>
 						<div class="input-group">
 							<div class="input-group-addon">Tk.</div>
-							<input type="number" class="form-control" id="amountPaid" placeholder="Cut Amount" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
+							<input type="number" class="form-control" id="amountPaid" placeholder="Discount Amount" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;">
 						</div>
 					</div>
 					<div class="form-group">
